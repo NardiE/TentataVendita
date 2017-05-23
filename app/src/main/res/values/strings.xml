@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Tentata Vendita</string>
+    <string name="addebito_message">Operazione di Addebito</string>
+    <string name="accredito_message">Operazione di Accredito</string>
 </resources>

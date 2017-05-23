@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:screenOrientation="portrait"
     android:layout_height="match_parent"
-    tools:context="com.example.edoardo.tentatavendita.MainActivity"
+    tools:context="com.example.edoardo.tentatavendita.activity.MainActivity"
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
 
@@ -19,7 +19,7 @@
         tools:layout_constraintLeft_creator="1"
         android:layout_marginTop="52dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/setting_iv"
         android:layout_marginLeft="93dp" />
 
     <ImageView
@@ -45,42 +45,42 @@
         android:id="@+id/search_client_button"
         android:layout_width="0dp"
         android:layout_height="70dp"
-        android:background="@color/colorPrimaryDark"
-        app:srcCompat="@android:drawable/ic_menu_search"
-        android:onClick="search"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="@+id/qr_button"
-        tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="57dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@+id/qr_button"
-        app:layout_constraintHorizontal_bias="0.0" />
+        app:layout_constraintRight_toRightOf="@+id/qr_button"
+        app:srcCompat="@drawable/ic_search"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
 
     <ImageButton
         android:id="@+id/imageButton6"
         android:layout_width="0dp"
         android:layout_height="74dp"
-        android:onClick="sync"
-        android:background="@color/colorPrimaryDark"
-        app:srcCompat="@android:drawable/ic_popup_sync"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/qr_button"
-        android:layout_marginStart="29dp"
-        android:layout_marginEnd="29dp"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="11dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginEnd="29dp"
         android:layout_marginLeft="29dp"
-        android:layout_marginRight="29dp" />
+        android:layout_marginRight="29dp"
+        android:layout_marginStart="29dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="sync"
+        app:layout_constraintBottom_toTopOf="@+id/qr_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/ic_update"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/setting_iv"
         android:layout_width="0dp"
         android:layout_height="213dp"
-        app:srcCompat="@mipmap/ic_logo"
+        app:srcCompat="@mipmap/ic_launcher"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         android:layout_marginStart="1dp"
@@ -91,6 +91,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp" />
+        android:layout_marginRight="1dp"/>
 
 </android.support.constraint.ConstraintLayout>

@@ -10,19 +10,19 @@
 
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/confirm_button"
         android:layout_width="139dp"
         android:layout_height="64dp"
-        android:background="?attr/colorPrimaryDark"
-        android:onClick="returnto"
-        app:srcCompat="@android:drawable/ic_menu_send"
+        android:layout_marginBottom="23dp"
         android:layout_marginEnd="16dp"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
+        android:layout_marginRight="16dp"
+        android:background="?attr/colorPrimaryDark"
+        android:onClick="confirm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="23dp"
-        android:layout_marginRight="16dp" />
+        app:srcCompat="@android:drawable/ic_menu_send"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1" />
 
     <TextView
         android:id="@+id/textView8"
@@ -102,7 +102,7 @@
         android:layout_height="62dp"
         android:layout_marginStart="16dp"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="numberDecimal|numberSigned"
         app:layout_constraintBaseline_toBaselineOf="@+id/button2"
         tools:layout_constraintBaseline_creator="1"
         tools:layout_constraintLeft_creator="1"
@@ -143,4 +143,18 @@
         android:layout_marginBottom="23dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="16dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:onClick="seeEvent"
+        app:layout_constraintRight_toLeftOf="@+id/confirm_button"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/return_button"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="33dp"
+        android:layout_marginRight="32dp" />
 </android.support.constraint.ConstraintLayout>
